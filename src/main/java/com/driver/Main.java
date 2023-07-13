@@ -7,15 +7,14 @@ public class Main {
       }
   }
     static class B extends A{
-      @Override
         public String meth() {
             return "Method is overridden in Extendend class B";
         }
     }
     public static void main(String[] args){
-        B obj1 = new B();
+        A obj1 = new A();
         obj1.meth();
-        B obj = new B();
+        A obj = new B();
         obj.meth();
 
     }
